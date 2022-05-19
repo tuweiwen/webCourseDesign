@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--通过国内CDN引入Bootstrap3.3.7框架-->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--对顶栏进行部分样式设置-->
+    <style>
+        .navbar {
+            background-color: #004F23;
+            border: 0;
+            border-radius: 0;
+        }
+        #shadow1::after {
+            box-shadow: 0 15px 10px #999;
+        }
+    </style>
+
+    <title>西西弗官网 | SISYPHE | 西西弗书店 矢量咖啡 不二生活</title>
+</head>
+
+<body>
+    <!--使用语义化标签nav表示顶部导航栏-->
+    <nav class="navbar navbar-default container-fluid navbar-fixed-top" role="navigation" style="margin-bottom: 0; border-radius: 0;">
+        <div class="container">
+            <div class="navbar-header">
+                <!--自适应：小屏幕设备下展示下拉菜单样式的顶部导航栏-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <!--无障碍标签适配，便于屏幕阅读器读出按键的作用-->
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img width="120px" height="50px" src="./img/logo1-default.png" alt="西西弗LOGO"><a href="./index.html" class="navbar-brand"></a></img>
+            </div>
+            <!--顶部菜单列表-->
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" style="font-family:SimSun; font: size 18px;">
+                    <li><a href="#" style="color: white;">首页</a></li>
+                    <li><a href="#about" style="color: white;">关于西西弗</a></li>
+                    <li><a href="#culture" style="color: white;">文化沙龙</a></li>
+                    <li><a href="https://www.sisyphe.com.cn/map.html" style="color: white;">发展版图</a></li>
+                    <li><a href="#business" style="color: white;">开店&商务</a></li>
+                    <li><a href="http://sisyphe.zhiye.com/" style="color: #72c02c;">招聘</a></li>
+                    <li><a href="#footer-contact" style="color: white;">关注我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!--使用div盒子标签表示网站主要信息内容-->
+    <div id="content" class="container-fluid">
+        <div class="container">
+
+             <!--使用Bootstrap中自带的swiper组件实现可切换的图片效果(swiper)-->
+            <div id="myCarousel" class="carousel slide">
+                <!--背景图指示标志-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-to-slide="0"></li>
+                    <li data-target="#myCarousel" data-to-slide="1"></li>
+                </ol>
+
+                <!--背景图-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/img/bg-1.jpg" alt="背景图1">
+                    </div>
+                    <div class="item">
+                        <img src="./img/bg-3.jpg" alt="背景图2">
+                    </div>
+                </div>
+
+                <!--图片切换按钮-->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!--“关于”-->
+            <div id="about">
+                <div style="margin-top: 150px;">
+                    <img src="/img/home.png" alt="房子" class="img-responsive center-block">
+                </div>
+                <div class="text-center" style="font-family: Simsun;">
+                    <p style="line-height: 90px; font-weight: bold; font-size: 36px;">关于西西弗</p>
+                    <p style="margin-top: -35px; font-weight: bold; font-size: 24px; color: #c1791d">About Sisyphe</p>
+                    <p style="margin-top: 30px; font-size: 20px;">参与构成本地精神生活 引导推动大众精品阅读</p>
+                </div>
+    
+                <div style="background-color:#fff; text-indent: 2em; font: size 14px #555; font-family: Simsum; padding: 1em; margin: 50px; border-top:#72c02c 2px solid; border-left: #eee 1px solid; border-right: #eee 1px solid; border-bottom: #eee 1px solid; line-height: 32px; position: relative">
+                    <div id="shadow1" style="position: absolute;top: 80%; left: 5px; width: 50%; z-index: -1; bottom: 15px; max-width: 300px; background: #999; transform: rotate(-3deg); box-shadow: 0 15px 10px #999;"></div>
+                    <p>西西弗，名称缘起于西西弗斯神话。西西弗斯从事的是连续的运动，没有目的，无所谓善恶成败，这个行动看上去仿佛是无效的，但它包含着让人畏惧的内容。无关力的大小，无论神罚与因果，我们选择了向上。取其坚忍不拔的含义，带点牺牲精神，我们希望可以成为图书行业或者文化行业的西西弗斯。</p>
+                    <p>西西弗书店是一家全国性主题体验连锁精致书店，长期以来，西西弗秉承“参与构成本地精神生活”的价值理念，以“引导推动大众精品阅读”的经营理念发展连锁书店。</p>
+                    <p>目前旗下有西西弗书店、矢量咖啡、不二生活文创、七十二阅听课儿童阅读体验空间、推石文化等子品牌。以28年对图书和阅读的专注研究，西西弗细分出标准线（黑标/绿标/红标）、主题线、定制线三大店型产品线，分别匹配不同城市商业体定位，为读者打造层次丰富的阅读体验；开创专业的图书产品线和大数据系统，让读者轻松的选到好书；搭建互动交流平台，与读者共享城市文化空间。</p>
+                    <p>公司总部位于重庆，截止目前，西西弗在全国80多个城市拥有300多家实体连锁书店，300多家意式咖啡馆，超过500万活跃会员。</p>
+                    <div id="shadow2" style="top: 80%; width: 50%; z-index: -1; bottom: 15px; max-width: 300px; background: #999; position: absolute; box-shadow: 0 15px 10px #999; left: auto; right: 5px; transform: rotate(3deg);"></div>
+                </div>
+            </div>
+            
+            <!--图标栏-->
+            <div id="culture">
+                <div style="text-align: center;">
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block">
+                        <img src="./img/button01.png" alt="图标:西西弗书店" style="width: 140px;">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">西西弗书店</span>
+                    </a>
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block"">
+                        <img src="./img/button02.png" alt="图标:矢量咖啡" style="width: 140px;">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">矢量咖啡</span>
+                    </a>
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block"">
+                        <img src="./img/button03.png" alt="图标:不二生活" style="width: 140px;">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">不二生活</span>
+                    </a>
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block"">
+                        <img src="./img/button04.png" alt="图标:七十二阅听课" style="width: 140px;">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">七十二阅听课</span>
+                    </a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block">
+                        <img src="./img/button05.png" alt="图标:发展版图">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">发展版图</span>
+                    </a>
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block">
+                        <img src="./img/button06.png" alt="图标:开店&商务">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">开店&商务</span>
+                    </a>
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block">
+                        <img src="./img/button07.png" alt="图标:招聘">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">招聘</span>
+                    </a>
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block">
+                        <img src="./img/button08.png" alt="图标:近期活动">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">近期活动</span>
+                    </a>
+                    <a href="#" style="width: 140px; margin: 15px; display: inline-block">
+                        <img src="./img/button09.png" alt="图标:往期精选">
+                        <span style="font-family:SimSun; color: #004F23; line-height:3em; font-size: 22px; font-weight: bold;">往期精选</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--合作信息-->
+            <div id="business">
+                <div style="background-color: #000; color: #fff; font-family: Simsun; padding-bottom: 15px; margin: 50px;">
+                    <div id="business-title" style="text-align: center; padding-top: 10px">
+                        <h1>开店合作 &商务合作</h1>
+                        <h3>Business Presentations</h3>
+                    </div>
+                    
+                    <div id="business-img" style="background: url(./img/business_02.png) no-repeat right bottom; line-height: 2em; border-bottom: #db9433 2px solid; margin: 20px 20px 0px 20px; padding: 0px 40px 70px 40px;">
+                        <p><span style="color: #db9433;">开店合作：</span>周一至周五 工作时间9:00am—18:00pm 致电（023）6546 6626</p>
+                        <p>【西西弗书店连锁拓展方式为直营连锁，恕不接受加盟】</p>
+                        <p><span style="color: #db9433;">商务合作：</span></p>
+                        <p><span style="color: #db9433;">文化活动合作：</span>周一至周五 工作时间9:00am—18:00pm 致电（023）6531 5386</p>
+                        <p><span style="color: #db9433;">不二生活创意空间合作：</span>将产品简介、图片和联系方式发送至电子邮箱：bookartlife@126.com，工作时间9:00am—18:00pm 致电（023）65323159</p>
+                        <p><span style="color: #db9433;">大宗团购合作：</span>企业商品采购、广告及文化活动冠名招商服务大宗团购合作</p>
+                        <p>周一至周五 工作时间9:00am—18:00pm 致电（023）65316297</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--使用语义化标签footer表示底部页尾-->
+    <footer> 
+        <!--店铺联系方式-->
+        <div class="container-fluid" style="background-color: #272727; color: #fff; font-family: Simsun; padding-top: 20px;">
+            <div class="container" style="margin-bottom: 50px;">
+                <div id="footer-contact">
+                    <!--大屏设备下的左半部分-->
+                    <div id="sns" class="col-lg-8">
+                        <div id="weibo">
+                            <h3>新浪微博</h3>
+                            <a href="http://weibo.com/sisyphe" style="color: #fff; font-size: 13px;">@西西弗书店</a><br/>
+                            <a href="http://weibo.com/u/6250986512" style="color: #fff; font-size: 13px;">@西西弗书店-华北地区：北京 天津 青岛 济南 石家庄 淄博 威海 日照 太原 烟台 包头 临沂</a><br/>
+                            <a href="http://weibo.com/cdsisyphe" style="color: #fff; font-size: 13px;">@西西弗书店-西南地区：贵阳 重庆 成都 昆明 遵义 都匀 安顺 凯里 泸州 六盘水 乐山 仁怀</a><br/>
+                            <a href="http://weibo.com/jinweizhu" style="color: #fff; font-size: 13px;">@西西弗书店-华南地区：深圳 广州 南宁 厦门 福州 海口 佛山 莆田 柳州 泉州</a><br/>
+                            <a href="http://weibo.com/u/5537254740" style="color: #fff; font-size: 13px;">@西西弗书店-华东地区：杭州 上海 南京 合肥 苏州 无锡 温州 宁波 嘉兴 徐州 南通 扬州 芜湖 常州 常熟 潍坊 余姚</a><br/>
+                            <a href="http://weibo.com/u/5695155909" style="color: #fff; font-size: 13px;">@西西弗书店-东北地区：沈阳 哈尔滨 长春 大连 鞍山</a><br/>
+                            <a href="http://weibo.com/u/5695369448" style="color: #fff; font-size: 13px;">@西西弗书店-华中地区：武汉 长沙 赣州 郑州 南昌 洛阳</a><br/>
+                            <a href="http://weibo.com/u/6266254521" style="color: #fff; font-size: 13px;">@西西弗书店-西北地区：西安 银川 西宁 兰州</a><br/>
+                        </div>
+                        <div id="wechat">
+                            <h3>微信公众号</h3>
+                            <p style="color: #fff; font-size: 13px; line-height: 1em;">西西弗书店订阅号：微信号SISYPHEBOOKS</p>
+                            <p style="color: #fff; font-size: 13px; line-height: 1em;">西西弗书店服务号：微信号SISYPHESTORE</p>
+                            <p style="color: #fff; font-size: 13px; line-height: 1em;">西西弗矢量咖啡服务号：微信号upcoffee1993</p>
+                            <p style="color: #fff; font-size: 13px; line-height: 1em;">不二生活服务号：西西弗书店不二生活</p>
+                        </div>
+                        <div id="douban">
+                            <h3>豆瓣</h3>
+                            <a href="https://site.douban.com/sisyphe/" style="color: #fff; font-size: 13px;">西西弗书店-重庆</a>
+                        </div>
+                    </div>
+                    <!--大屏设备下的右半部分-->
+                    <div id="qrcode" class="col-lg-4" style="text-align: center;">
+                        <div id="hire">
+                            <a href="http://sisyphe.zhiye.com/">
+                                <img src="./img/attention_03.png" alt="招聘图标" style="width: 200px; height: 200px;">
+                                <p style="text-align: center; line-height: 3em; color: #72c02c; font-size: 14px;">简历投递及职位信息 请点击西西弗招聘</p>
+                            </a>
+                        </div>
+                        <div id="code" style="padding-top: 20px; line-height: 2em;">
+                            <div class="col-lg-6">
+                                <img src="./img/attention_06.png" alt="西西弗书店微信公众号二维码" style="width: 150px; height: 150px;">
+                                <p>西西弗书店</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="./img/attention_08.png" alt="西西弗书店微信服务号二维码" style="width: 150px; height: 150px;">
+                                <p>西西弗书店-服务号</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--版权&备案信息-->
+        <div class="container-fluid" style="background-color: #222; color:  #fff; font-family: Simsun; padding: 5px 50px 15px 50px">
+            <div class="container">
+                <div id="footer-copyright">
+                    <!--大屏设备下的左半部分-->
+                    <div class="col-lg-5" id="copyright">
+                        <p>2017 © All Rights Reserved.</p>
+                        <a href="http://beian.miit.gov.cn/" style="font-family: Simsun; color: #fff">渝ICP备17015694号-1</a>&nbsp;
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010302003022" style="color: #fff;">
+                            <img src="./img/ba.png" alt="备案标志">
+                            <p style="display: inline; font-family: Simsun;">渝公网安备 50010302003022号</p>
+                        </a>
+                    </div>
+                    <!--大屏设备下的左半部分-->
+                    <div class="col-lg-7" id="address" style="text-align: right; font-family: Simsun; font-size: 13px;">
+                        <p>公司总部地址：重庆市渝中区瑞天路58号西西弗办公楼【问闻书店（西西弗总部概念店）楼上】</p>
+                        <p>联系电话：023-6531 5389</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
